@@ -9,7 +9,7 @@ export const config = {
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Replace this with your actual destination URL
-  const TARGET_URL = 'https://your-oracle-server.com/payments/paynow/result';
+  const TARGET_URL = 'https://angelic-surprise-production.up.railway.app/payments/paynow/result';
 
   if (req.method !== 'POST') {
     return res.status(405).send('Method Not Allowed');
